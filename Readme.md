@@ -1,7 +1,8 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект [«Седона»](https://up.htmlacademy.ru/profession/frontender-lite/4/lite-htmlcss/4/project/sedona)
 
-* Студент: [{{userName}}]({{userProfile}}).
-* Наставник: `Неизвестно`.
+* Студент: [Евгений Сомов](https://htmlacademy.ru/profile/somov_eugene).
+* Наставник: `отсутствует`.
+* Сайт: [«Седона»](https://somov-eugene.github.io/982685-sedona-lite04/)
 
 ---
 
@@ -10,15 +11,15 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 ---
 
-### Памятка
+## Памятка
 
-#### 1. Зарегистрируйтесь на Гитхабе
+### 1. Зарегистрируйтесь на Гитхабе
 
 Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
 
-#### 2. Создайте копию
+### 2. Создайте копию
 
-[Откройте мастер-репозиторий]({{homepage}}) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
+Откройте мастер-репозиторий и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
 
 <img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037949-67a635d6-7bae-11e7-9f2f-1a48fde231b9.jpg">
 
@@ -26,11 +27,11 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 <img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037953-6a8a7384-7bae-11e7-83ac-59603b1d696c.jpg">
 
-#### 3. Скачайте репозиторий на свой компьютер
+### 3. Скачайте репозиторий на свой компьютер
 
 Нажмите на зелёную кнопку «Code». Далее в выпавшем списке выберите пункт «Download ZIP». Выберите папку для скачивания на компьютер, например «Загрузки».
 
-#### 4. Начинайте обучение!
+### 4. Начинайте обучение
 
 ---
 
