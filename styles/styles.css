@@ -26,6 +26,7 @@ html {
 
 body {
   margin: 0;
+  min-width: 1200px;
   height: 100%;
 
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
@@ -148,14 +149,14 @@ img {
 
 /* hero */
 .hero {
-  padding: 52px 20px 81px;
-  background-color: #333333;
-  background-image: url("../images/divider.svg"),
+  padding: 51px 20px 82px;
+  background-color: #354751;
+  background-image:
+    url("../images/divider.svg"),
     url("../images/background-index.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center center;
-  background-size: 100% auto, cover;
-  min-height: 485px;
+  background-size: contain, cover;
 }
 
 .hero-img {
@@ -493,10 +494,7 @@ img {
 
 /* catalog-header */
 .catalog-header {
-  padding-top: 35px;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 70px;
+  padding: 35px 70px 70px;
   background-color: #333333;
   background-image: url("../images/background-filter.jpg");
   background-repeat: no-repeat;
@@ -515,10 +513,12 @@ img {
 
 .breadcrumbs-list {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   list-style-type: none;
 
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 
   font-size: 16px;
@@ -605,7 +605,6 @@ img {
 
 .search-top-block {
   display: flex;
-  margin-bottom: 40px;
 }
 
 .found-hotel {
@@ -646,8 +645,8 @@ img {
 }
 
 /* housing */
-.housing-img {
-  display: block;
+.housing {
+  padding: 40px 0;
 }
 
 .housing-list {
@@ -655,16 +654,33 @@ img {
   padding: 0;
   list-style-type: none;
 
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .housing-item {
-  width: 340px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+  "image image"
+  "title title"
+  "type price"
+  "details favorites"
+  "stars raiting";
+  gap: 16px 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.housing-img {
+  grid-area: image;
 }
 
 .housing-title {
+  grid-area: title;
   margin: 0;
   font-weight: 700;
   font-size: 24px;
@@ -673,16 +689,20 @@ img {
 }
 
 .housing-type {
+  grid-area: type;
   font-size: 18px;
   line-height: 21px;
 }
 
 .housing-price {
+  grid-area: price;
+  justify-self: end;
   font-size: 18px;
   line-height: 21px;
 }
 
 .housing-link-details {
+  grid-area: details;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -694,6 +714,7 @@ img {
 }
 
 .housing-button {
+  grid-area: favorites;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -703,7 +724,16 @@ img {
   color: #ffffff;
 }
 
+.housing-stars {
+  margin: 0;
+  grid-area: stars;
+  align-self: center;
+}
+
 .housing-raiting {
+  grid-area: raiting;
+  justify-self: center;
+  align-self: center;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
